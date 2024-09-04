@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Linkedin Filter",
+    "version": "1.0",
+    "description": "Tired of scrolling through applications you didn't really search for? Me too.",
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "tabs"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.linkedin.com/jobs/search/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}

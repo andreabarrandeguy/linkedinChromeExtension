@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+    <title>LinkedIn Filter</title>
+</head>
+<body>
+    <header>
+        <img src="icon48.png" alt="LinkedIn Filter Icon">
+    </header>
+    <main>
+        <div id="linkedinSearch">
+            <div>Results for</div>
+            <div class="linkedinSearch_terms">
+                <span id="searchTitle"></span>
+
+                <div class="btn-container">
+                    <label class="switch btn-color-mode-switch">
+                        <input value="1" id="color_mode" name="color_mode" type="checkbox">
+                        <label class="btn-color-mode-switch-inner" and="AND" or="OR" for="color_mode"></label>
+                    </label>
+                </div>
+                
+                <span id="searchLocation"></span>
+            </div>
+            <div class="linkedinSearch_filters">
+                <div class="checkbox-wrapper-4">
+                    <input class="inp-cbx" id="seen" type="checkbox" aria-label="Seen">
+                    <label class="cbx" for="seen">
+                      <span>
+                        <svg width="12px" height="10px">
+                          <use xlink:href="#check-4"></use>
+                        </svg>
+                      </span>
+                      <span>Seen</span>
+                    </label>
+                    <svg class="inline-svg">
+                      <symbol id="check-4" viewBox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                      </symbol>
+                    </svg>
+                  </div>
+
+                <div class="checkbox-wrapper-4">
+                    <input class="inp-cbx applied" id="applied" type="checkbox" aria-label="Applied">
+                    <label class="cbx applied" for="applied">
+                        <span>
+                        <svg width="12px" height="10px">
+                            <use xlink:href="#check-4"></use>
+                        </svg>
+                        </span>
+                        <span>Applied</span>
+                    </label>
+                    <svg class="inline-svg">
+                        <symbol id="check-4" viewBox="0 0 12 10">
+                        <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </symbol>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div id="message">Please go to <a href="https://www.linkedin.com/jobs/search/" target="_blank">LinkedIn Job Search</a></div>
+    </main>
+    <footer>by <a href="https://andreabarrandeguy.github.io/" target="_blank">Andrea Barrandeguy</a></footer>
+    <script src="popup.js"></script>
+</body>
+</html>
